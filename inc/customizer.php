@@ -5,24 +5,29 @@
  * @package ultrabootstrap
  */
 
-/**
- * Add postMessage support for site title and description for the Theme Customizer.
- *
- * @param WP_Customize_Manager $wp_customize Theme Customizer object.
- */
-
-
-function ultrabootstrap_customize_register( $wp_customize ) {
-  $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-  $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-  $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-}
-add_action( 'customize_register', 'ultrabootstrap_customize_register' );
-
-
 function ultrabootstrap_customizer_register( $wp_customize ) 
     {
       // Do stuff with $wp_customize, the WP_Customize_Manager object.
+
+      /**
+       * Add postMessage support for site title and description for the Theme Customizer.
+       *
+       * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+       */
+
+      $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
+      $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+      $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+      if ( isset( $wp_customize->selective_refresh ) ) {
+        $wp_customize->selective_refresh->add_partial( 'blogname', array(
+          'selector'        => '.site-title',
+          'render_callback' => 'ultrabootstrap_customize_partial_blogname',
+        ) );
+        $wp_customize->selective_refresh->add_partial( 'blogdescription', array(
+          'selector'        => '.site-description',
+          'render_callback' => 'ultrabootstrap_customize_partial_blogdescription',
+        ) );
+      }
 
       $wp_customize->add_panel( 'theme_option', array(
         'priority' => 200,
@@ -372,6 +377,24 @@ function ultrabootstrap_customizer_register( $wp_customize )
     }
 
 add_action( 'customize_register', 'ultrabootstrap_customizer_register' );
+
+
+/**
+ * Render the site title for the selective refresh partial.
+ *
+ * @return void
+ */
+function ultrabootstrap_customize_partial_blogname() {
+	bloginfo( 'name' );
+}
+/**
+ * Render the site tagline for the selective refresh partial.
+ *
+ * @return void
+ */
+function ultrabootstrap_customize_partial_blogdescription() {
+	bloginfo( 'description' );
+}
 
 
 /**
