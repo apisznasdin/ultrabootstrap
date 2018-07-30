@@ -6,9 +6,9 @@ Description: Ultrabootstrap is a multipurpose Free WordPress Theme for bloggers 
 
 
 
-Requires at least: 4.5
-Tested up to: 4.7.2
-Stable tag: 1.1.4
+Requires at least: 4.6
+Tested up to: 4.9.7
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,3 +36,15 @@ Ultrabootstrap is distributed under the terms of the GNU General Public License 
 * Google Fonts - Apache License, version 2.0
 * wp-bootstrap-navwalker – ​https://github.com/twittem/wp-bootstrap-navwalker, License: Distributed under the terms of the GPL-2.0+ @twittem
 * Image licences Used in screenshot, https://unsplash.com/photos/9VPtNW84vGI CC0 License
+
+
+== Changelog ==
+
+= 1.1.6 - July 30, 2018 =
+* Default Feature Image.
+
+= 1.1.5 - February 12, 2017 = 
+* Minor Updates
+
+= 1.0.0 - December 26 2015 =
+* Initial release

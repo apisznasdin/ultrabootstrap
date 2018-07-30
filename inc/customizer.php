@@ -25,7 +25,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
       // Do stuff with $wp_customize, the WP_Customize_Manager object.
 
       $wp_customize->add_panel( 'theme_option', array(
-        'priority' => 220,
+        'priority' => 200,
         'title' => __( 'Ultrabootstrap Options', 'ultrabootstrap' ),
         'description' => __( 'ultrabootstrap Options', 'ultrabootstrap' ),
       ));
@@ -232,6 +232,31 @@ function ultrabootstrap_customizer_register( $wp_customize )
                         ),
     'priority'              => '220'
     ) );
+
+        
+    /**********************************************/
+    /*************** Default Post THumbnail ***************/
+    /**********************************************/
+
+    $wp_customize->add_section('default_thumbnail_section', array(
+        'priority' => 75,
+        "title" => 'Default Post Thumbnail',
+        "description" => __('Set default post thumbnail', 'lightpress'),
+        'panel' => 'theme_option'
+    ));
+    $wp_customize->add_setting('default_thumbnail', array(
+        'default' => '',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'esc_url_raw',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control($wp_customize, 'default_thumbnail', array(
+    'label' => __('Default Post Thumbnail', 'lightpress'),
+    'section' => 'default_thumbnail_section',
+    'settings' => 'default_thumbnail',
+    ))
+    );
 
 
       /**********************************************/
