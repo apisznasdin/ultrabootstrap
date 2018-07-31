@@ -25,6 +25,13 @@ Ultrabootstrap is distributed under the terms of the GNU General Public License 
 6. Create categories
 7. Select category needed for the homepage
 
+== Frequently Asked Questions ==
+
+= Does this theme support any plugins ? = 
+Yes LightPress theme supports Contact Form 7 and One Click Demo Import
+
+
+
 == Credits ==
 
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -36,6 +43,7 @@ Ultrabootstrap is distributed under the terms of the GNU General Public License 
 * Google Fonts - Apache License, version 2.0
 * wp-bootstrap-navwalker – ​https://github.com/twittem/wp-bootstrap-navwalker, License: Distributed under the terms of the GPL-2.0+ @twittem
 * Image licences Used in screenshot, https://unsplash.com/photos/9VPtNW84vGI CC0 License
+* {TGM Plugin Activation} library is licensed under the GPL-2.0, https://github.com/TGMPA/TGM-Plugin-Activation/
 
 
 == Changelog ==
