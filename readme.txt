@@ -51,10 +51,8 @@ Yes LightPress theme supports Contact Form 7 and One Click Demo Import
 = 1.1.8 - July 31, 2018 =
 * Default Feature Image.
 * Selective Refresh Enabled.
-* TGM  Plugin activation
+* TGM  Plugin activation integrated.
+* One Click Demo Import Plugin Supported.
 
-= 1.1.5 - February 12, 2017 = 
-* Minor Updates
-
-= 1.0.0 - December 26 2015 =
-* Initial release
+= 1.1.5- 1.0.0 - February 12, 2017 =
+* see changelog.txt

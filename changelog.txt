@@ -1,6 +1,6 @@
 Changelog
 
-Tested up to: 4.6
+Tested up to: 4.9.7
 
 
 Version 1.1.5
