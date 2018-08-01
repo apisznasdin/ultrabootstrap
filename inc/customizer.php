@@ -246,7 +246,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
     $wp_customize->add_section('default_thumbnail_section', array(
         'priority' => 75,
         "title" => 'Default Post Thumbnail',
-        "description" => __('Set default post thumbnail', 'lightpress'),
+        "description" => __('Set default post thumbnail', 'ultrabootstrap'),
         'panel' => 'theme_option'
     ));
     $wp_customize->add_setting('default_thumbnail', array(
@@ -257,7 +257,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
     ));
     $wp_customize->add_control(
         new WP_Customize_Image_Control($wp_customize, 'default_thumbnail', array(
-    'label' => __('Default Post Thumbnail', 'lightpress'),
+    'label' => __('Default Post Thumbnail', 'ultrabootstrap'),
     'section' => 'default_thumbnail_section',
     'settings' => 'default_thumbnail',
     ))
@@ -400,10 +400,10 @@ function ultrabootstrap_customize_partial_blogdescription() {
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function ultrabootstrap_customize_preview_js() {
-  wp_enqueue_script( 'ultrabootstrap_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function _s_customize_preview_js() {
+	wp_enqueue_script( '_s-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'ultrabootstrap_customize_preview_js' );
+add_action( 'customize_preview_init', '_s_customize_preview_js' );
 
 function ultrabootstrap_customizer_js() {
     wp_enqueue_script('ultra-customizer-js', get_template_directory_uri() . '/js/ultra-customizer.js', array('jquery'), '1.3.0', true);

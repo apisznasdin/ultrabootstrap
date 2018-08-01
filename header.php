@@ -19,7 +19,6 @@
 
 
 <body <?php body_class(); ?>>
-<?php $header_text_color = get_header_textcolor();?>
 
 <header>	
 <section class="logo-menu">
@@ -36,8 +35,8 @@
 				      	<div class="logo-tag">
 				      		
 				      			<?php if ( has_custom_logo()): the_custom_logo(); else: ?>
-				      			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="site-title" style="color:<?php echo "#". $header_text_color;?>"><?php echo bloginfo( 'name' ); ?></h1>
-				      			<h2 class="site-description" style="color:<?php echo "#". $header_text_color;?>"><?php bloginfo('description'); ?></h2><?php endif; ?></a>                     
+				      			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="site-title" ><?php echo bloginfo( 'name' ); ?></h1>
+				      			<h2 class="site-description" ><?php bloginfo('description'); ?></h2><?php endif; ?></a>                     
       						
       					</div>
 				    </div>

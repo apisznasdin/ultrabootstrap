@@ -39,9 +39,11 @@ if ( ! function_exists( 'ultrabootstrap_header_style' ) ) :
 function ultrabootstrap_header_style() {
 	$header_text_color = get_header_textcolor();
 
-	// If no custom options for text are set, let's bail
-	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value.
-	if ( HEADER_TEXTCOLOR == $header_text_color ) {
+	/*
+	* If no custom options for text are set, let's bail.
+	* get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+	*/
+	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
 		return;
 	}
 
@@ -61,10 +63,11 @@ function ultrabootstrap_header_style() {
 		// If the user has set a custom color for the text use that.
 		else :
 	?>
-		.site-title a,
-		.site-description
-		.navbar-default .navbar-nav > li > a {
-			color: #<?php echo esc_attr( $header_text_color ); ?> !important;
+		.site-title,
+		header .logo-tag h2,
+		.navbar-default .navbar-nav > li > a,
+		.dropdown-menu > li > a {
+			color: #<?php echo esc_attr( $header_text_color ); ?>;
 		}
 	<?php endif; ?>
 	</style>

@@ -62,7 +62,7 @@
 				<?php }?> 
 				
 			    <div class="pull-right">
-			        <?php echo __('Theme Ultrabootstrap by','ultrabootstrap'); ?> <a href="http://phantomthemes.com"><?php echo __('Phantom Themes','ultrabootstrap'); ?></a>
+			        <?php echo __('Theme Ultrabootstrap by','ultrabootstrap'); ?> <a href="https://phantomthemes.com"><?php echo __('Phantom Themes','ultrabootstrap'); ?></a>
 			      </div>
 			    </div>
 
