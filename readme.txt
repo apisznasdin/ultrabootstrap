@@ -8,7 +8,7 @@ Description: Ultrabootstrap is a multipurpose Free WordPress Theme for bloggers 
 
 Requires at least: 4.6
 Tested up to: 4.9.7
-Stable tag: 1.1.9
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,12 +48,10 @@ Yes UltraBootstrap theme supports Contact Form 7 and One Click Demo Import
 
 == Changelog ==
 
-= 1.1.9 - August 1, 2018 =
-* Default Feature Image.
-* Selective Refresh Enabled.
+= 1.2.0 - August 1, 2018 =
 * TGM  Plugin activation integrated.
 * One Click Demo Import Plugin Supported.
-* Header text color Issue Fixed
+* Customizer Fix: Header Color, Default Feature Image, Selective Refresh.
 
 = 1.1.5- 1.0.0 - February 12, 2017 =
 * see changelog.txt
