@@ -4,11 +4,11 @@ Theme URI: https://phantomthemes.com/items/ultrabootstrap-premium-wordpress-them
 Author: phantomthemes
 Author URI: https://phantomthemes.com
 Description: Ultrabootstrap is a multipurpose Free WordPress Theme for bloggers & artist. It consists of Featured Slider, Featured Posts, custom background, custom color and welcome message in Homepage layout. The theme can be customized from the Theme Options of Customizer. Blog page with right-sidebar. You may download this awesome and light weight theme. More detail of theme availabe in readme.txt file. for support https://phantomthemes.com/support/ or view demo https://phantomthemes.com/view?theme=UltraBootstrap
-Version: 1.2.0
+Version: 1.2.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ultrabootstrap
-Tags: right-sidebar, theme-options, featured-images,rtl-language-support,grid-layout, editor-style, custom-header, threaded-comments, custom-background, custom-colors, blog, footer-widgets
+Tags: full-width-template, two-columns, grid-layout,right-sidebar, custom-logo, theme-options, entertainment, education, news, photography, post-formats, footer-widgets, featured-images, rtl-language-support, featured-image-header, custom-menu, flexible-header, editor-style, custom-header, threaded-comments, custom-background, custom-colors, blog
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -710,7 +710,7 @@ object {
 --------------------------------------------------------------*/
 
 body {
-    font: 300 13px/22px Roboto;
+    font: 300 14px/22px Roboto;
     color: #666;
     background-color: #f4f4f4;
     margin-top: 55px;
@@ -720,7 +720,7 @@ body {
     border-radius: 0;
     border: none;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.9em;
     letter-spacing: 2px;
     padding: 5px 25px;
 }
@@ -781,7 +781,7 @@ h4 {
     color: #333;
 }
 a.readmore {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -954,6 +954,7 @@ header .navbar-default .navbar-nav li a {
     position: absolute;
     top: 50%;
     font-size: 1.95em;
+    text-transform: uppercase;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -1034,6 +1035,7 @@ section.footers {
     background: white;
     padding: 10px;
     border-bottom: 1px solid #e7e7e7;
+}
     /*inside page*/
     
     .page-title {
@@ -1105,10 +1107,7 @@ section.footers {
             font-size: 1em;
             margin-top: 15px;
         }
-        header .logo-tag h2 {
-            font-size: 0.5em;
-            letter-spacing: 1px;
-        }
+
         .theme-slider .carousel-inner .item .slide-caption .summary {
             font-size: 1.25em;
             line-height: 20px;
@@ -1138,8 +1137,8 @@ section.footers {
         h4 {
             margin-bottom: 10px;
         }
-        .logo-tag {
-            margin-left: 15px;
+        header .logo-tag {
+            margin: 4px 0 8px 15px;
         }
         .navbar-default .navbar-toggle {
             position: absolute;
