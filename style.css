@@ -3,7 +3,7 @@ Theme Name: ultrabootstrap
 Theme URI: https://phantomthemes.com/items/ultrabootstrap-premium-wordpress-theme/
 Author: phantomthemes
 Author URI: https://phantomthemes.com
-Description: Ultrabootstrap is a multipurpose Free WordPress Theme for bloggers & artist. It consists of Featured Slider, Featured Posts, custom background, custom color and welcome message in Homepage layout. The theme can be customized from the Theme Options of Customizer. Blog page with right-sidebar. You may download this awesome and light weight theme. More detail of theme availabe in readme.txt file. for support https://phantomthemes.com/support/ or view demo https://phantomthemes.com/view?theme=UltraBootstrap
+Description: Ultrabootstrap is a multipurpose Free Responsive WordPress Theme for creative bloggers & artist. It consists of Fullwidth Slider, Featured Posts, custom background, footer widget blog, custom color, social icons and welcome message in Homepage layout. Theme is beautifully handcrafted with minimalist design approach and based on Twitter Bootstrap and Underscore Framework. High quality clean code with Search Engine Optimized (SEO) and can be used as blog for businesses related to travel tour, health, yoga, gym,wedding, hair salons, furniture showcase, education, arts, sports and events etc. The theme can be customized from the Theme Options of Customizer and it comes with one click demo support. You may download this awesome and light weight theme. For support https://phantomthemes.com/support/ or view demo https://phantomthemes.com/view?theme=UltraBootstrap
 Version: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -1168,7 +1168,6 @@ section.footers {
             -moz-transform: translateY(0);
             -webkit-transform: translateY(0);
             transform: translateY(0);
-            height: 155px;
         }
         .theme-slider .carousel-inner .item .slide-caption .summary {
             font-size: 1em;

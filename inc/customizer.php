@@ -324,7 +324,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
         'googleplus_textbox',
           array(
             'sanitize_callback' => 'esc_url_raw',
-            'default' => '',
+            'default' => '#',
           )
       );
 
@@ -360,7 +360,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
         'pinterest_textbox',
           array(
             'sanitize_callback' => 'esc_url_raw',
-          'default' => '',
+          'default' => '#',
           )
       );
       
@@ -370,6 +370,24 @@ function ultrabootstrap_customizer_register( $wp_customize )
             'label' => __('Pinterest','ultrabootstrap'),
             'section' => 'social_section',
             'settings' => 'pinterest_textbox',
+            'type' => 'text',
+         )
+      );
+
+      $wp_customize->add_setting(
+        'instagram_textbox',
+          array(
+            'sanitize_callback' => 'esc_url_raw',
+          'default' => '#',
+          )
+      );
+      
+      $wp_customize->add_control(
+        'instagram_textbox',
+          array(
+            'label' => __('Instagram','ultrabootstrap'),
+            'section' => 'social_section',
+            'settings' => 'instagram_textbox',
             'type' => 'text',
          )
       );
