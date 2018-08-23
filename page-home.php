@@ -85,13 +85,13 @@ get_header(); ?>
   	<div class="container">
       <div class="row">
         <div class="col-sm-7 spacer">
-          			<h4><?php echo esc_attr(get_theme_mod( 'welcome_textbox1', '' )); ?></h1>
-          			<p><?php echo esc_attr(get_theme_mod( 'textarea_setting', '' )); ?></p> 
-          			<a href="<?php echo esc_attr(get_theme_mod( 'welcome_button', '' )); ?>" title="Read More" class="btn btn-danger"><?php _e('Read More','ultrabootstrap'); ?></a>
+          			<h4><?php echo esc_attr(get_theme_mod( 'welcome_textbox1', 'WELCOME TO THE BOOTSTRAP THEME' )); ?></h1>
+          			<p><?php echo esc_attr(get_theme_mod( 'textarea_setting', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' )); ?></p> 
+          			<a href="<?php echo esc_attr(get_theme_mod( 'welcome_button', '#' )); ?>" title="Read More" class="btn btn-danger"><?php _e('Read More','ultrabootstrap'); ?></a>
         </div> 
         <div class="col-sm-4 col-sm-offset-1">
           <div class="spacer message">
-          <h1><?php echo esc_attr(get_theme_mod( 'welcome_textbox2', '' )); ?></h1>
+          <h1><?php echo esc_attr(get_theme_mod( 'welcome_textbox2', 'FREE RESPONSIVE, MULTIPURPOSE BUSINESS AND CORPORATE THEME PERFECT FOR ANY ONE' )); ?></h1>
           </div>
         </div>
       </div>          
