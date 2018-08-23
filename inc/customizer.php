@@ -104,7 +104,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
         'welcome_textbox1',
           array(
             'sanitize_callback' => 'ultrabootstrap_sanitize_text',
-            'default' => '',
+            'default' => 'WELCOME TO THE BOOTSTRAP THEME',
           )
       );
 
@@ -122,7 +122,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
         'welcome_textbox2',
           array(
             'sanitize_callback' => 'ultrabootstrap_sanitize_text',
-            'default' => '',
+            'default' => 'FREE RESPONSIVE, MULTIPURPOSE BUSINESS AND CORPORATE THEME PERFECT FOR ANY ONE',
           )
       );
 
@@ -141,7 +141,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
         'textarea_setting' ,
           array(
             'sanitize_callback' => 'ultrabootstrap_sanitize_text',
-            'default' => '', 
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 
         )); 
    
       $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'textarea_setting', array( 
@@ -161,7 +161,7 @@ function ultrabootstrap_customizer_register( $wp_customize )
         'welcome_button',
             array(
               'sanitize_callback' => 'esc_url_raw',
-              'default' => '',
+              'default' => '#',
           )
       );
 
@@ -262,6 +262,31 @@ function ultrabootstrap_customizer_register( $wp_customize )
     'settings' => 'default_thumbnail',
     ))
     );
+
+    /**********************************************/
+    /*************** Header Search ***************/
+    /**********************************************/
+
+    $wp_customize->add_section('header_search_section', array(
+      'priority' => 40,
+      "title" => 'Header Search',
+      "description" => __('Enable / Disable Search in Top Navigation', 'ultrabootstrap'),
+      'panel' => 'theme_option'
+    ));
+    $wp_customize->add_setting('header_search_setting', array(
+      'default' => 1,
+      'type' => 'theme_mod',
+      'transport' => 'refresh',
+      'sanitize_callback' => 'ultrabootstrap_sanitize_checkbox',
+      'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('header_search_control', array(
+      'label' => __('Show the Header Search?', 'ultrabootstrap'),
+      'section' => 'header_search_section',
+      'settings' => 'header_search_setting',
+      'description' => __( 'Toggle showing the header search input.', 'ultrabootstrap' ),
+      'type' => 'checkbox'
+    ));
 
 
       /**********************************************/
@@ -435,6 +460,20 @@ add_action( 'customize_controls_enqueue_scripts', 'ultrabootstrap_customizer_js'
 
 function ultrabootstrap_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
+}
+
+/**
+ * Checkbox sanitization callback example.
+ * 
+ * Sanitization callback for 'checkbox' type controls. This callback sanitizes `$checked`
+ * as a boolean value, either TRUE or FALSE.
+ *
+ * @param bool $checked Whether the checkbox is checked.
+ * @return bool Whether the checkbox is checked.
+ */
+function ultrabootstrap_sanitize_checkbox( $checked ) {
+  // Boolean check.
+  return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
 function ultrabootstrap_sanitize_textarea( $input ) {

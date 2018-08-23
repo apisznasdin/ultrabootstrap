@@ -43,23 +43,26 @@
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<form  class="navbar-form navbar-right" role="search">
-							<ul class="nav pull-right">
-								<div class="main-search">
-									<button class="btn btn-search" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-									  <i class="fa fa-search"></i>
-									</button>
-									<div class="search-box collapse" id="collapseExample">
-											<div class="well search-well">
-										    <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                          						<input type="text" class="form-control" placeholder="<?php echo __('Search a Keyword','ultrabootstrap');?>" value="<?php echo get_search_query(); ?>" name="s">
-                          					</form>
-											</div>
+						<?php if (get_theme_mod('header_search_setting', 1)) : ?>
+
+							<form  class="navbar-form navbar-right" role="search">
+								<ul class="nav pull-right">
+									<div class="main-search">
+										<button class="btn btn-search" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+										<i class="fa fa-search"></i>
+										</button>
+										<div class="search-box collapse" id="collapseExample">
+												<div class="well search-well">
+												<form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+													<input type="text" class="form-control" placeholder="<?php echo __('Search a Keyword','ultrabootstrap');?>" value="<?php echo get_search_query(); ?>" name="s">
+												</form>
+												</div>
+										</div>
 									</div>
-								</div>
-							</ul>
-						</form>
-  							
+								</ul>
+							</form>
+
+						<?php endif; ?>  							
 						<?php
 				            wp_nav_menu( array(
 				                'menu'              => 'primary',
