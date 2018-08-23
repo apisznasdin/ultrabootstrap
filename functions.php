@@ -165,8 +165,8 @@ function ultrabootstrap_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 
 	register_sidebar( array(
@@ -175,8 +175,8 @@ function ultrabootstrap_widgets_init() {
 			'description'   => __('Footer First Widget','ultrabootstrap'),
 			'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		) );
 	register_sidebar( array(
 			'name'          => __('Footer Two','ultrabootstrap'),
@@ -184,8 +184,8 @@ function ultrabootstrap_widgets_init() {
 			'description'   => __('Footer Second Widget','ultrabootstrap'),
 			'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		) );
 	register_sidebar( array(
 			'name'          => __('Footer There','ultrabootstrap'),
@@ -193,8 +193,8 @@ function ultrabootstrap_widgets_init() {
 			'description'   => __('Footer Third Widget','ultrabootstrap'),
 			'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		) );
 	register_sidebar( array(
 			'name'          => __('Footer Four','ultrabootstrap'),
@@ -202,8 +202,8 @@ function ultrabootstrap_widgets_init() {
 			'description'   => __('Footer Four Widget','ultrabootstrap'),
 			'before_widget' => '<div id="%1$s" class="widget col-md-3 col-sm-6 %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		) );
 }
 add_action( 'widgets_init', 'ultrabootstrap_widgets_init' );

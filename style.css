@@ -4,7 +4,7 @@ Theme URI: https://phantomthemes.com/items/ultrabootstrap-premium-wordpress-them
 Author: phantomthemes
 Author URI: https://phantomthemes.com
 Description: Ultrabootstrap is a multipurpose Free WordPress Theme for bloggers & artist. It consists of Featured Slider, Featured Posts, custom background, custom color and welcome message in Homepage layout. The theme can be customized from the Theme Options of Customizer. Blog page with right-sidebar. You may download this awesome and light weight theme. More detail of theme availabe in readme.txt file. for support https://phantomthemes.com/support/ or view demo https://phantomthemes.com/view?theme=UltraBootstrap
-Version: 1.2.1
+Version: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ultrabootstrap
@@ -919,16 +919,18 @@ header .navbar-default .navbar-nav li a {
     color: #fff;
 }
 .theme-slider .carousel-inner .item .slide-caption .summary {
-    font-size: 1.75em;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
 }
 .theme-slider .carousel-inner .item .slide-caption .summary p {
     margin: 0;
 }
 .theme-slider .carousel-inner .item .slide-caption .slide-caption-details {
     width: 45%;
+    background-color: rgba(0,0,0,0.6);
+    padding: 25px;
 }
 .theme-slider .glyphicon-chevron-right:before,
 .theme-slider .glyphicon-chevron-left:before {
@@ -1047,6 +1049,7 @@ section.footers {
         color: #000;
         border-bottom: 2px solid #F66264;
         display: inline-block;
+        padding-bottom: 10px;
     }
     /*inside page*/
     

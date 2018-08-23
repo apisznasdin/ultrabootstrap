@@ -33,16 +33,15 @@ get_header(); ?>
             $cn = 0;
             if ($loop->have_posts()) :  while ($loop->have_posts()) : $loop->the_post();$cn++;
           ?>
-
-    			<div class="item <?php echo $cn == 1 ? 'active' : ''; ?>">
-  						  <?php if(has_post_thumbnail()){
-                	$arg =
+          <?php if(has_post_thumbnail()){ ?>
+    			<div class="item <?php echo $cn == 1 ? 'active' : ''; ?>">  						  
+               <?php
+                   	$arg =
                   	array(
                       'class' => 'img-responsive',
                       'alt' => ''
                 		);
                 		the_post_thumbnail('',$arg);
-              	  } 
                 ?>
             <div class="slide-caption">
               <div class="container">
@@ -54,6 +53,7 @@ get_header(); ?>
               </div>
             </div>
       		</div> <!-- /.end of item -->
+        <?php } ?>
         
     			<?php                 
       			endwhile;
