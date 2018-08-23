@@ -1,6 +1,6 @@
 === ultrabootstrap ===
 Contributors: phantomthemes
-Tags: full-width-template, two-columns, grid-layout,right-sidebar, custom-logo, theme-options, entertainment, education, news, photography, post-formats, footer-widgets, featured-images, rtl-language-support, featured-image-header, custom-menu, flexible-header, editor-style, custom-header, threaded-comments, custom-background, custom-colors, blog
+Tags: full-width-template, two-columns, grid-layout,right-sidebar, custom-logo, theme-options, news, photography, post-formats, footer-widgets, featured-images, rtl-language-support, featured-image-header, custom-menu, flexible-header, editor-style, custom-header, threaded-comments, custom-background, custom-colors, blog
 
 Description: Ultrabootstrap is a multipurpose Free WordPress Theme for bloggers & artist. It consists of Featured Slider, Featured Posts, custom background, custom color and welcome message in Homepage layout. The theme can be customized from the Theme Options of Customizer. Blog page with right-sidebar. You may download this awesome and light weight theme. More detail of theme availabe in readme.txt file. for support http://phantomthemes.com/support/ or Demo http://phantomthemes.com/view?theme=UltraBootstrap
 
