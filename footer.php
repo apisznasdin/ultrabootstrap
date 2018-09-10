@@ -33,13 +33,13 @@
 			        <div class="pull-left">
 				            <ul class="list-inline social">
 	                            <?php 
-	                            $facebook =  esc_url(get_theme_mod ('facebook_textbox'));
-	                            $twitter = esc_url(get_theme_mod('twitter_textbox'));
-	                            $googleplus = esc_url(get_theme_mod('googleplus_textbox'));
-	                            $youtube = esc_url(get_theme_mod('youtube_textbox'));
-	                            $linkedin = esc_url(get_theme_mod('linkedin_textbox'));
-															$pinterest = esc_url(get_theme_mod('pinterest_textbox'));
-															$instagram = esc_url(get_theme_mod('instagram_textbox'));
+	                            $facebook =  esc_url(get_theme_mod ('facebook_textbox', 'https://facebook.com/PhantomThemes'));
+	                            $twitter = esc_url(get_theme_mod('twitter_textbox','https://twitter.com/PhantomThemes'));
+	                            $googleplus = esc_url(get_theme_mod('googleplus_textbox','#'));
+	                            $youtube = esc_url(get_theme_mod('youtube_textbox','#'));
+	                            $linkedin = esc_url(get_theme_mod('linkedin_textbox','#'));
+															$pinterest = esc_url(get_theme_mod('pinterest_textbox','#'));
+															$instagram = esc_url(get_theme_mod('instagram_textbox','#'));
 	                            if($facebook){?>
 	                              <li><a href="<?php echo $facebook;?>"><i class="fa fa-facebook"></i></a></li>
 	                            <?php }
