@@ -7,7 +7,6 @@
 
 ?>
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-	<label class="assistive-text" for="s"><?php esc_html_e( 'Search', 'ultrabootstrap' ); ?></label>
 	<div class="input-group">
 		<input class="field form-control" id="s" name="s" style="margin-bottom:5px;" type="text"
 			placeholder="<?php esc_attr_e( 'Search &hellip;', 'ultrabootstrap' ); ?>" value="<?php the_search_query(); ?>">
