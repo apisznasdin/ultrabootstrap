@@ -138,13 +138,13 @@ class ultrabootsrap_wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
         $atts['href']       = $item->url;
 
-        //$atts['href'] = ! empty( $item->url ) ? $item->url : '';
+        $atts['href'] = ! empty( $item->url ) ? $item->url : '';
 
-        //$atts['data-toggle']  = 'dropdown';
+        $atts['data-toggle']  = 'dropdown';
 
-        //$atts['class']      = 'dropdown-toggle';
+        $atts['class']      = 'dropdown-toggle';
 
-        //$atts['aria-haspopup']  = 'true';
+        $atts['aria-haspopup']  = 'true';
 
       } else {
 
