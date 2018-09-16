@@ -51,6 +51,7 @@ Yes UltraBootstrap theme supports Contact Form 7 and One Click Demo Import
 
 = 1.2.4 - Sept 13, 2018 =
 * Fixed Drop down Menu on Mobile version.
+* Fallback Menu support and minor CSS fix
 
 = 1.2.3 - Sept 11, 2018 =
 * Sarch Form Optimized to Bootstrap.

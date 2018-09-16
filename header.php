@@ -70,7 +70,7 @@
 				                'depth'             => 8,
 				                'container'         => 'div',
 				                'menu_class'        => 'nav navbar-nav navbar-right',
-				                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+				                'fallback_cb'       => 'ultrabootsrap_wp_bootstrap_navwalker::fallback',
 				                'walker'            => new ultrabootsrap_wp_bootstrap_navwalker())
 				            );
 				        ?>
