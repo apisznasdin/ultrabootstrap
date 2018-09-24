@@ -48,6 +48,8 @@ Yes UltraBootstrap theme supports Contact Form 7 and One Click Demo Import
 
 == Changelog ==
 
+= 1.2.5 - Sept 24, 2018 =
+* ReadMe For Github Support
 
 = 1.2.4 - Sept 13, 2018 =
 * Fixed Drop down Menu on Mobile version.
