@@ -79,11 +79,11 @@ The ultrabootstrap bootstrap WordPress theme allows you to create a visually app
 * Image licences Used in screenshot, https://unsplash.com/photos/9VPtNW84vGI CC0 License
 * {TGM Plugin Activation} library is licensed under the GPL-2.0, https://github.com/TGMPA/TGM-Plugin-Activation/
 
-##Tags: 
+## Tags: 
 
 full-width-template, two-columns, grid-layout,right-sidebar, custom-logo, theme-options, news, photography, post-formats, footer-widgets, featured-images, rtl-language-support, featured-image-header, custom-menu, flexible-header, editor-style, custom-header, threaded-comments, custom-background, custom-colors, blog
 
 ## Frequently Asked Questions
 
-= Does this theme support any plugins ? = 
-Yes UltraBootstrap theme supports Contact Form 7 and One Click Demo Import
+* Does this theme support any plugins ?      
+ Yes UltraBootstrap theme supports Contact Form 7 and One Click Demo Import
