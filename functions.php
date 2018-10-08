@@ -87,6 +87,7 @@ function ultrabootstrap_setup() {
 	 */
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
+
 	add_editor_style() ;
 }
 endif; // ultrabootstrap_setup

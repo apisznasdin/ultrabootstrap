@@ -448,6 +448,8 @@ function _s_customize_preview_js() {
 }
 add_action( 'customize_preview_init', '_s_customize_preview_js' );
 
+/* Lite Feature */
+/* Buy Pro Buttons in Customizer */
 function ultrabootstrap_customizer_js() {
     wp_enqueue_script('ultra-customizer-js', get_template_directory_uri() . '/js/ultra-customizer.js', array('jquery'), '1.3.0', true);
 
@@ -457,6 +459,7 @@ function ultrabootstrap_customizer_js() {
     wp_enqueue_style( 'ultra-customizer-css', get_template_directory_uri() . '/css/ultra-customizer.css');
 }
 add_action( 'customize_controls_enqueue_scripts', 'ultrabootstrap_customizer_js' );
+/* Lite Feature: End */
 
 function ultrabootstrap_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
